@@ -272,9 +272,7 @@ function solve(sudoku, x, y){
     // If there is already a number move to next number
     if (sudoku[y][x]){
         solve(sudoku, newX, newY);
-        if (fin == 1){
-            return;
-        }
+        return;
     }
 
     // Check 1-9
