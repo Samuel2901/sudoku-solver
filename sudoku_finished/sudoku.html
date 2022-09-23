@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="/static/sudoku.css" rel="stylesheet">
+        <title>Sudoku</title>
+    </head>
+    <body>
+        <h1 id="title">Sudoku Solver</h1>
+        <table>
+            <tr id="r0">
+                <td id="r0d0">
+                    <input type="text" maxlength="1" id="input00">
+                </td>
+                <td id="r0d1">
+                    <input type="text" maxlength="1" id="input01">
+                </td>
+                <td id="r0d2">
+                    <input type="text" maxlength="1" id="input02">
+                </td>
+                <td id="r0d3">
+                    <input type="text" maxlength="1" id="input03">
+                </td>
+                <td id="r0d4">
+                    <input type="text" maxlength="1" id="input04">
+                </td>
+                <td id="r0d5">
+                    <input type="text" maxlength="1" id="input05">
+                </td>
+                <td id="r0d6">
+                    <input type="text" maxlength="1" id="input06">
+                </td>
+                <td id="r0d7">
+                    <input type="text" maxlength="1" id="input07">
+                </td>
+                <td id="r0d8">
+                    <input type="text" maxlength="1" id="input08">
+                </td>
+            </tr>
+            <tr id="r1">
+                <td id="r1d0">
+                    <input type="text" maxlength="1" id="input10">
+                </td>
+                <td id="r1d1">
+                    <input type="text" maxlength="1" id="input11">
+                </td>
+                <td id="r1d2">
+                    <input type="text" maxlength="1" id="input12">
+                </td>
+                <td id="r1d3">
+                    <input type="text" maxlength="1" id="input13">
+                </td>
+                <td id="r1d4">
+                    <input type="text" maxlength="1" id="input14">
+                </td>
+                <td id="r1d5">
+                    <input type="text" maxlength="1" id="input15">
+                </td>
+                <td id="r1d6">
+                    <input type="text" maxlength="1" id="input16">
+                </td>
+                <td id="r1d7">
+                    <input type="text" maxlength="1" id="input17">
+                </td>
+                <td id="r1d8">
+                    <input type="text" maxlength="1" id="input18">
+                </td>
+            </tr>
+            <tr id="r2">
+                <td id="r2d0">
+                    <input type="text" maxlength="1" id="input20">
+                </td>
+                <td id="r2d1">
+                    <input type="text" maxlength="1" id="input21">
+                </td>
+                <td id="r2d2">
+                    <input type="text" maxlength="1" id="input22">
+                </td>
+                <td id="r2d3">
+                    <input type="text" maxlength="1" id="input23">
+                </td>
+                <td id="r2d4">
+                    <input type="text" maxlength="1" id="input24">
+                </td>
+                <td id="r2d5">
+                    <input type="text" maxlength="1" id="input25">
+                </td>
+                <td id="r2d6">
+                    <input type="text" maxlength="1" id="input26">
+                </td>
+                <td id="r2d7">
+                    <input type="text" maxlength="1" id="input27">
+                </td>
+                <td id="r2d8">
+                    <input type="text" maxlength="1" id="input28">
+                </td>
+            </tr>
+            <tr id="r3">
+                <td id="r3d0">
+                    <input type="text" maxlength="1" id="input30">
+                </td>
+                <td id="r3d1">
+                    <input type="text" maxlength="1" id="input31">
+                </td>
+                <td id="r3d2">
+                    <input type="text" maxlength="1" id="input32">
+                </td>
+                <td id="r3d3">
+                    <input type="text" maxlength="1" id="input33">
+                </td>
+                <td id="r3d4">
+                    <input type="text" maxlength="1" id="input34">
+                </td>
+                <td id="r3d5">
+                    <input type="text" maxlength="1" id="input35">
+                </td>
+                <td id="r3d6">
+                    <input type="text" maxlength="1" id="input36">
+                </td>
+                <td id="r3d7">
+                    <input type="text" maxlength="1" id="input37">
+                </td>
+                <td id="r3d8">
+                    <input type="text" maxlength="1" id="input38">
+                </td>
+            </tr>
+            <tr id="r4">
+                <td id="r4d0">
+                    <input type="text" maxlength="1" id="input40">
+                </td>
+                <td id="r4d1">
+                    <input type="text" maxlength="1" id="input41">
+                </td>
+                <td id="r4d2">
+                    <input type="text" maxlength="1" id="input42">
+                </td>
+                <td id="r4d3">
+                    <input type="text" maxlength="1" id="input43">
+                </td>
+                <td id="r4d4">
+                    <input type="text" maxlength="1" id="input44">
+                </td>
+                <td id="r4d5">
+                    <input type="text" maxlength="1" id="input45">
+                </td>
+                <td id="r4d6">
+                    <input type="text" maxlength="1" id="input46">
+                </td>
+                <td id="r4d7">
+                    <input type="text" maxlength="1" id="input47">
+                </td>
+                <td id="r4d8">
+                    <input type="text" maxlength="1" id="input48">
+                </td>
+            </tr>
+            <tr id="r5">
+                <td id="r5d0">
+                    <input type="text" maxlength="1" id="input50">
+                </td>
+                <td id="r5d1">
+                    <input type="text" maxlength="1" id="input51">
+                </td>
+                <td id="r5d2">
+                    <input type="text" maxlength="1" id="input52">
+                </td>
+                <td id="r5d3">
+                    <input type="text" maxlength="1" id="input53">
+                </td>
+                <td id="r5d4">
+                    <input type="text" maxlength="1" id="input54">
+                </td>
+                <td id="r5d5">
+                    <input type="text" maxlength="1" id="input55">
+                </td>
+                <td id="r5d6">
+                    <input type="text" maxlength="1" id="input56">
+                </td>
+                <td id="r5d7">
+                    <input type="text" maxlength="1" id="input57">
+                </td>
+                <td id="r5d8">
+                    <input type="text" maxlength="1" id="input58">
+                </td>
+            </tr>
+            <tr id="r6">
+                <td id="r6d0">
+                    <input type="text" maxlength="1" id="input60">
+                </td>
+                <td id="r6d1">
+                    <input type="text" maxlength="1" id="input61">
+                </td>
+                <td id="r6d2">
+                    <input type="text" maxlength="1" id="input62">
+                </td>
+                <td id="r6d3">
+                    <input type="text" maxlength="1" id="input63">
+                </td>
+                <td id="r6d4">
+                    <input type="text" maxlength="1" id="input64">
+                </td>
+                <td id="r6d5">
+                    <input type="text" maxlength="1" id="input65">
+                </td>
+                <td id="r6d6">
+                    <input type="text" maxlength="1" id="input66">
+                </td>
+                <td id="r6d7">
+                    <input type="text" maxlength="1" id="input67">
+                </td>
+                <td id="r6d8">
+                    <input type="text" maxlength="1" id="input68">
+                </td>
+            </tr>
+            <tr id="r7">
+                <td id="r7d0">
+                    <input type="text" maxlength="1" id="input70">
+                </td>
+                <td id="r7d1">
+                    <input type="text" maxlength="1" id="input71">
+                </td>
+                <td id="r7d2">
+                    <input type="text" maxlength="1" id="input72">
+                </td>
+                <td id="r7d3">
+                    <input type="text" maxlength="1" id="input73">
+                </td>
+                <td id="r7d4">
+                    <input type="text" maxlength="1" id="input74">
+                </td>
+                <td id="r7d5">
+                    <input type="text" maxlength="1" id="input75">
+                </td>
+                <td id="r7d6">
+                    <input type="text" maxlength="1" id="input76">
+                </td>
+                <td id="r7d7">
+                    <input type="text" maxlength="1" id="input77">
+                </td>
+                <td id="r7d8">
+                    <input type="text" maxlength="1" id="input78">
+                </td>
+            </tr>
+            <tr id="r8">
+                <td id="r8d0">
+                    <input type="text" maxlength="1" id="input80">
+                </td>
+                <td id="r8d1">
+                    <input type="text" maxlength="1" id="input81">
+                </td>
+                <td id="r8d2">
+                    <input type="text" maxlength="1" id="input82">
+                </td>
+                <td id="r8d3">
+                    <input type="text" maxlength="1" id="input83">
+                </td>
+                <td id="r8d4">
+                    <input type="text" maxlength="1" id="input84">
+                </td>
+                <td id="r8d5">
+                    <input type="text" maxlength="1" id="input85">
+                </td>
+                <td id="r8d6">
+                    <input type="text" maxlength="1" id="input86">
+                </td>
+                <td id="r8d7">
+                    <input type="text" maxlength="1" id="input87">
+                </td>
+                <td id="r8d8">
+                    <input type="text" maxlength="1" id="input88">
+                </td>
+            </tr>
+        </table>
+        <div class="b">
+            <button class="help" id="help">Help</button>
+            <button id="solve">Solve</button>
+            <button id="clear">Clear</button>
+        </div>
+        <p id="foot">Made by Samuel 23-09-2022</p>
+        <script src="/static/sudoku.js"></script>
+    </body>
+</html>
