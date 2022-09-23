@@ -1,0 +1,107 @@
+#title
+{
+    font-size: 70px;
+    text-align: center;
+}
+
+table
+{
+    background-color: black;
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td
+{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+tr:nth-child(3) > td
+{
+    border-bottom-style: solid;
+}
+
+tr:nth-child(6) > td
+{
+    border-bottom-style: solid;
+}
+
+td:nth-child(3)
+{
+    border-right-style: solid;
+}
+
+td:nth-child(6)
+{
+    border-right-style: solid;
+}
+
+#foot
+{
+    text-align: center;
+    font-size: 15px;
+}
+
+input{
+    height: 40px;
+    width: 40px;
+    border: 0px;
+    text-align: center;
+    font-size: 30px;
+}
+input:hover{
+    cursor: pointer;
+}
+
+.b{
+    text-align: center;
+    padding-top: 25px;
+}
+
+button{
+    width: 10rem;
+    height: 3.3rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#solve:hover{
+    font-size: 1.7rem;
+}
+
+#solve:active{
+    font-size: 1.5rem;
+}
+
+#clear:hover{
+    font-size: 1.7rem;
+}
+
+#clear:active{
+    font-size: 1.5rem;
+}
+
+.help:hover{
+    font-size: 1.7rem;
+}
+
+.help:active{
+    font-size: 1.5rem;
+}
+
+#solve {
+    background-color: #82bfeb;
+}
+
+#clear {
+    background-color: #d7d7dd;
+}
+.help{
+    background-color: #52ff1987;
+}
