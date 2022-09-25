@@ -24,7 +24,7 @@ function createSudoku(){
 function oneToNine(){
     if (isNaN(this.value) || parseInt(this.value) < 1)
     {
-        this.value = "";
+        this.value = null;
     }
 
     // Check if input is possible
